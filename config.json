@@ -1,0 +1,47 @@
+{
+    "models": [
+      {
+        "title": "Llama 3",
+        "provider": "ollama",
+        "model": "llama3"
+      },
+      {
+        "title": "Starcoder 3b",
+        "provider": "ollama",
+        "model": "starcoder2:3b"
+      },
+      {
+        "title": "deepseek-r1 8b",
+        "provider": "ollama",
+        "model": "deepseek-r1:8b"
+      },
+    ],
+    "customCommands": [
+      {
+        "name": "test",
+        "prompt": "{{{ input }}}\n\nWrite a comprehensive set of unit tests for the selected code. It should setup, run tests that check for correctness including important edge cases, and teardown. Ensure that the tests are complete and sophisticated. Give the tests just as chat output, don't edit any file.",
+        "description": "Write unit tests for highlighted code"
+      }
+    ],
+    // "tabAutocompleteModel": {
+    //   "title": "Starcoder 3b",
+    //   "provider": "ollama",
+    //   "model": "starcoder2:3b"
+    // },
+    "tabAutocompleteModel": {
+        "title": "qwen2.5-coder 1.5b",
+        "provider": "ollama",
+        "model": "qwen2.5-coder:1.5b",
+        // "apiBase": "https://your_ollama_server"
+    },
+    // "tabAutocompleteModel": {
+    //     "title": "deepseek-coder 6.7b",
+    //     "provider": "ollama",
+    //     "model": "deepseek-coder:6.7b",
+    //     // "apiBase": "https://your_ollama_server"
+    // },
+    "embeddingsProvider": {
+      "provider": "transformers.js"
+    },
+    "docs": []
+  }
